@@ -1,0 +1,34 @@
+<style>
+    :host {
+        background-image: var(--mc-ui-background-darken-img);
+        background-repeat: repeat;
+        background-size: auto;
+        text-align: center;
+    }
+    mc-input {
+        width: 46.5%;
+        min-width: min(100%, 23ch);
+        box-sizing: border-box;
+        display: block;
+        margin: 10px auto;
+        padding: 1.5ex 1ch;
+        text-align: start;
+        border-color: #aaa;
+    }
+    .gen-options, .bottom-tools, mc-button {
+        margin-top: 10px;
+    }
+</style>
+<div class="container">
+    <h1>创造一个新的世界</h1>
+    <mc-input id="world-name" placeholder="世界名称"></mc-input>
+    <mc-input id="world-seed" placeholder="种子"></mc-input>
+    <div class="gen-options">
+        <mc-button id="world-type-btn">世界类型:&emsp;<span id="world-type-echo">Normal</span></mc-button>
+        <mc-button disabled>树生成:&emsp;<span id="tree-echo">On</span></mc-button>
+    </div>
+    <div class="bottom-tools">
+        <mc-button id="create-new-word">创建新的世界</mc-button>
+        <mc-button gotoPage="*pop">返回标题页面</mc-button>
+    </div>
+</div>
